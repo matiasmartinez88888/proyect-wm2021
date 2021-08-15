@@ -1,0 +1,42 @@
+  <div id="fondocoches">
+<div class="container-fluid">
+  
+    <div class="container"> 
+        <br>
+        
+        
+        <h2 id="disponibilidad">Disponibilidad de Coches</h2>
+       
+    </div>
+        <hr>
+        <div class="row">
+            {{#each users}}
+                    {{#if activo}}
+                    <div class="col-md-3">
+                    {{else}}
+                    <div class="col-md-3">
+                    {{/if}}
+                    <div class="card p-2 mb-2">
+                        {{#if genero}}
+                        <img src="/images/dispo/autoverde.jpg" class="card-img-top" alt="{{nombre}}">
+                        {{else}}
+                        <img src="/images/dispo/autorojo.jpg" alt="{{nombre}}">
+                        {{/if}}
+                        <p class="m-0">{{#each nombre}} <strong>{{this}}</strong> {{/each}}</p>
+                        <p class="m-0">{{localidad}}</p>
+                        <p class="m-0">{{profesion}}</p>
+                        {{#if activo}}
+                            <p class="badge bg-success">En Sucursal Central</p>
+                        {{else}}
+                            <p class="badge bg-danger">No disponible</p>
+                        {{/if}}
+                    </div>
+                </div>
+            {{/each}}
+            
+        </div>
+         </div>
+
+</div>
+
+</div>

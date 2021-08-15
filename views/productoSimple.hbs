@@ -1,0 +1,60 @@
+<div class="container-fluid">
+    <div class="container mt-5">
+                <div class="breadcrumb">
+            <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb  ">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item active" aria-current="page">
+                <a class="text-dark" href="/">Consecionaria</a>
+            </li>
+            <li class="breadcrumb-item">
+                <a class="text-dark" href="/productos">Pedidos</a>
+            </li>
+            <li class="breadcrumb-item">
+                {{prodSingle.categoria}}
+            </li>
+        </ol>
+    </nav>
+        </div>
+
+    </div>
+    <div class="container">
+        <div class="row mb-5">
+            <div class="col-6">
+                {{#if prodSingle.imagen}}
+                    <img class="img-fluid w-100"  src="/images/{{prodSingle.imagen}}" class="card-img" alt="{{nombre}}">
+                {{else}}
+                    <img class="img-fluid w-100"  src="/images/default.png" class="card-img" alt="{{nombre}}">
+                {{/if}}
+            </div>
+            <div class="col-6">
+                <h3>
+                {{prodSingle.nombre}}
+                </h3>
+                <p>
+                {{prodSingle.descripcion}}
+                </p>
+                <div class="row">
+                    <div class="col-6 h3">
+                        $ {{prodSingle.precio}}.-
+                    </div>
+                    <div class="col-6">
+                        {{#if prodSingle.stock}}
+                            <span class="btn btn-primary">cantidad: {{prodSingle.stock}}</span>
+                            <hr>
+                            <a href="/" class="btn btn-primary">Proceder a Metodos de Pago</a>
+                        {{else}}
+                            <a href="/" class="btn btn-danger">Sin stock</a>
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+            <div class="alert alert-success">
+                {{legales}}
+            </div>
+            <div class="alert alert-success">
+                {{envios}}
+            </div>
+    </div>
+</div>

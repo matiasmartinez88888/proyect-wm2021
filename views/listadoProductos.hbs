@@ -1,0 +1,36 @@
+<div class="container-fluid mt-5">
+    <div class="container">
+
+        <div class="row">
+            <div class="col-9">
+                <h1>Catalogo:</h1>
+            </div>
+            <div class="col-3 text-end">
+                <a href="/nuevo-producto" class="btn btn-dark">Realizar Pedido</a>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+        {{#each productos}}
+            <div class="col-sm-6">
+                <a href="/productos/{{id}}">
+                <div class="card mb-4 card-prod shadow-sm bg-dark">
+                        {{#if imagen}}
+                            <img  src="/images/{{imagen}}" class="card-img" alt="{{nombre}}">
+                        {{else}}
+                            <img  src="/images/default.png" class="card-img" alt="{{nombre}}">
+                        {{/if}}
+                    <div class="card-body">
+                        <p class="h4 text-info">{{nombre}}</p>
+                    </div>
+                </div>
+                </a>
+            </div>
+        {{/each}}
+    </div>
+
+
+
+    </div>
+</div>

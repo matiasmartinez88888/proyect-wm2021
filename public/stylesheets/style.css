@@ -1,0 +1,305 @@
+
+     .conteiner{
+    background-image: url(https://i.pinimg.com/originals/04/c0/82/04c082186393e4259c0a637b82d0c38f.gif);
+     }
+   
+      @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+      @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+   *{margin:0}
+   
+   /* @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@300;500;700&display=swap'); */
+   
+   body{
+         font-family: 'Monda', sans-serif;
+   }
+
+   
+
+ 
+   
+   
+
+   
+   
+
+   
+   .my-0{
+       
+       color: black;
+       
+   }
+   
+   .nav-item {
+       font-size: 26px;
+      
+   }
+   .content{
+       font-family: 'Playball', cursive;
+       font-size: 24px;
+   }
+   
+
+   #Fordtitulo{
+       font-family: 'Monda', sans-serif;
+       color: rgb(47, 192, 240);
+   }
+   
+   
+   
+  
+   
+   .slider {
+     position: relative;
+     top: 1400px;
+   }
+   
+   .form{
+     margin: 0px auto;
+     position: absolute;
+     color: white;
+     left: 30px;
+    bottom: -200px;
+    width: 20px;
+       font-family: 'Monda', sans-serif;
+    font-size: 15px;
+   }
+   .slider2 {
+     width: 65%;
+     margin: auto;
+     overflow: hidden;
+     border-radius: 50px;
+     border: 5px solid lightblue;
+   }
+  
+   .slider2 ul {
+     display: flex;
+     padding: 0;
+     width: 500%;
+     
+     animation: cambio 20s infinite alternate linear;
+   }
+   
+   .slider2 li {
+     width: 100%;
+     list-style: none;
+   }
+   
+   .slider2 img {
+     width: 100%;
+   }
+   
+   @keyframes cambio {
+     0% {margin-left: 0;}
+     20% {margin-left: 0;}
+     
+     25% {margin-left: -100%;}
+     45% {margin-left: -100%;}
+     
+     50% {margin-left: -200%;}
+     70% {margin-left: -200%;}
+     
+     75% {margin-left: -300%;}
+     100% {margin-left: -300%;}
+   }
+   .slider3 {
+     width: 35%;
+     height: 40%;
+     margin: auto;
+     overflow: hidden;
+     border-radius: 40px;
+     border: 2px solid rgb(47, 192, 240);
+     position: absolute;
+     right: 10px;
+     top: 240px;
+   }
+   .slider3 ul {
+     display: flex;
+     padding: 0;
+     width: 500%;
+     
+     animation: cambio 20s infinite alternate linear;
+   }
+   
+   .slider3 li {
+     width: 100%;
+     list-style: none;
+   }
+   
+   .slider3 img {
+     width: 100%;
+   }
+   
+   @keyframes cambio {
+     0% {margin-left: 0;}
+     20% {margin-left: 0;}
+     
+     25% {margin-left: -100%;}
+     45% {margin-left: -100%;}
+     
+     50% {margin-left: -200%;}
+     70% {margin-left: -200%;}
+     
+     75% {margin-left: -300%;}
+     100% {margin-left: -300%;}
+   }
+   
+   .card-text2{
+    font-size: 13px;
+   }
+   
+   
+   
+   
+   .wrapper{
+     width: 100%;
+   }
+   .carousel{
+     max-width: 1200px;
+     margin: auto;
+     padding: 0 30px;
+   }
+   .carousel .card{
+     color: #fff;
+     text-align: center;
+     margin: 20px 0;
+     line-height: 250px;
+     font-size: 90px;
+     font-weight: 600;
+     border-radius: 10px;
+     box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+   }
+   .carousel .card-1{
+   background: none;
+   }
+   .carousel .card-2{
+   background: none;
+   }
+   .carousel .card-3{
+   background: none;
+   }
+   .carousel .card-4{
+   background: none;
+   }
+   .carousel .card-5{
+     background: none;
+   }
+   .owl-dots{
+     text-align: center;
+     margin-top: 40px;
+   }
+   .owl-dot{
+     height: 15px;
+     width: 45px;
+     margin: 0 5px;
+     outline: none;
+     border-radius: 14px;
+     border: 2px solid #0072bc!important;
+     box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+     transition: all 0.3s ease;
+   }
+   .owl-dot.active,
+   .owl-dot:hover{
+     background: #0072bc!important;
+   }
+   
+   .my-0{
+     font-size: 26px;
+     margin-bottom: 10px;
+   }
+   
+   
+   .d-flex{
+     font-size: 30px;
+     float: left;
+   }
+   
+   .contacto{
+        font-family: 'Monda', sans-serif;
+        text-align: center;
+         color:#33afff;
+   
+   
+   }
+   
+   .img-fluid{
+     border-radius: 100%;
+   }
+   video{
+     position: relative;
+     right: 300px;
+     bottom: 50px;
+   }
+   .video2{
+     position: relative;
+     right: -350px;
+     top: -438px;
+   }
+   .tituloprincipal{
+     position: absolute;
+     bottom: 110px;
+     font-family: 'Monda', sans-serif;
+     width: 35%;
+     font-size: 37px;
+     color:white;
+   }
+   .flecha{
+     position: absolute;
+     top: 200px;
+     right: 465px;
+   }
+   #dispo{
+     color:rgb(47, 192, 240);
+     font-size: 18px;
+     font-family: 'Monda', sans-serif;
+     padding: 20px;
+     width: 50%;
+     
+   }
+   #dispo2{
+     font-family: letraford;
+     font-size: 45px;
+   }
+   .nav-item{
+     width: 150%;
+   }
+   #disponibilidad{
+     text-align: center;
+     color:black;
+     padding: 50px;
+     border-radius: 200px;
+    
+   }
+   
+   #footer34{
+     background-color:rgba(0,0,0,0.2);
+     font-family: 'Monda', sans-serif;
+     color: #0072bc;
+   }
+   #catalogo{
+     
+     float: left;
+     color:black;
+     font-size: 30px;
+   }
+   .card{
+     margin: 20px;
+   }
+   #histo{
+     color: rgb(47, 192, 240);
+     text-align: center;
+     font-size: 50px;
+     font-family:letraford;
+   }
+   .carousel{
+     width: 60%;
+     margin: 30px;
+     float: left;
+    
+   }
+   @font-face {
+     font-family:letraford;
+     src: url(letraford.ttf);
+   }
+   #vermas{
+     color:rgb(47, 192, 240) ;
+   }

@@ -1,0 +1,52 @@
+ <div class="container-fluid">
+        <div class="container mt-5">
+            <div class="breadcrumb">
+                <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb  ">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item active" aria-current="page">
+                            <a class="text-dark" href="/">Consecionaria</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            <a class="text-dark" href="/productos">Catalogo</a>
+                        </li>
+                        <li class="breadcrumb-item">
+                            {{prodSingle.categoria}}
+                        </li>
+                    </ol>
+                </nav>
+            </div>
+        
+        
+        <h2>Cargar Nuevo producto</h2>
+        <form action="" method="post" class="w-50 my-5">
+            <input class="form-control my-2" type="text" name="nombre" id="" placeholder="nombre" required>
+            <input class="form-control my-2" type="text" name="descripcion" id="" placeholder="descripcion" required>            
+            <input class="form-control my-2" type="text" name="imagen" id="" placeholder="imagen" required>           
+            <input class="form-control my-2" type="text" name="precio" id="" placeholder="precio" required>
+            <input class="form-control my-2" type="text" name="stock" id="" placeholder="cantidad" required>
+            <input class="form-control my-2" type="text" name="categoria" id="" placeholder="categoria" required>
+
+            <div class="text-center">
+            <input type="submit" value="Realizar Pedido" class="btn btn-dark" required>
+        </div>
+        <hr>
+        <p class="alert alert-warning">
+           Para ver su Carrito acceda a la seccion Carrito en la barra de tareas. Muchas Gracias.
+        </p>
+           
+        </form> 
+
+         {{#if alta}}
+        <p class="alert alert-success">
+            Producto cargado
+        </p>
+        {{else}}
+        <p class="alert alert-danger">
+            {{error}}
+        </p>    
+        {{/if}}
+
+
+
+    </div>
+</div>
