@@ -5,7 +5,7 @@ const Sequelize = require('sequelize')
 let database = 'heroku_5dbc6540559a7b8'
 let userMYSQL = 'bbb5b750b9b9ae'
 let passMySQL = 'ce37bb6c'
-let hostMySQL = '127.0.0.1'
+let hostMySQL = 'eu-cdbr-west-01.cleardb.com'
 
 const db = new Sequelize(database, userMYSQL, passMySQL, {
   host: hostMySQL,
